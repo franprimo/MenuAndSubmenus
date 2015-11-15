@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        //Mediante este metodo asociamos el xml del menu al activity.
         getMenuInflater().inflate(R.menu.menu_1, menu);
         return true;
     }
@@ -32,7 +33,8 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
 
         Toast t;
-
+        //Mediante el switch se que opcion esta seleccionada y se ejecuta un codigo,
+        //aunque aqui siempre sea un toast con diferente mensaje.
         switch (item.getItemId()){
             case R.id.opt1:
                 t = Toast.makeText(getBaseContext(), "Opcion A seleccionada", Toast.LENGTH_LONG);
